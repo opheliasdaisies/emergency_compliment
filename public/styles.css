@@ -34,8 +34,9 @@ body {
   float: left;
 }
 
-img {
-  margin: 50px 70px 5px;
+.right-content {
+  float:left;
+  margin: 50px;
 }
 
 .button {
