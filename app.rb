@@ -8,8 +8,10 @@ module Compliments
 
     compliments = YAML.load(File.read("./compliments.yaml"))
 
+    images = Dir["./public/images/*"].map {|image| "/images/#{Pathname.new(image).basename}"}
+
     get "/compliments" do
-      @compliment = Compliment.new(compliments.sample)
+      @compliment = Compliment.new(compliments.sample, images.sample)
 
       erb :compliment
     end

@@ -1,8 +1,9 @@
 class Compliment
-  attr_reader :message
+  attr_reader :message, :image
 
-  def initialize(message)
+  def initialize(message, image)
     @message = message
+    @image = image
   end
 
 end
