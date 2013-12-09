@@ -1,0 +1,10 @@
+body {
+  background-color: linen;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 25px;
+}
+
+.message {
+  width: 30px;
+  margin: 20px auto;
+}
