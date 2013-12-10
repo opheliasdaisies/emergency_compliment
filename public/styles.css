@@ -32,6 +32,8 @@ body {
   width: 200px;
   margin: 50px 50px 5px;
   float: left;
+  border-right: 5px solid Gray;
+  padding: 0 75px 75px 0;
 }
 
 .right-content {
