@@ -10,6 +10,10 @@ module Compliments
 
     images = Dir["./public/images/*"].map {|image| "/images/#{Pathname.new(image).basename}"}
 
+    get "/" do
+      redirect "/compliments"
+    end
+
     get "/compliments" do
       @compliment = Compliment.new(compliments.sample, images.sample)
 
